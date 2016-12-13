@@ -275,7 +275,7 @@
               
                 
                 <a class="post-title-link" href="/2016/12/13/protobuf/" itemprop="url">
-                  HBase的protobuf buffer版本问题
+                  HBase的Protocol Buffer版本问题
                 </a>
               
             
@@ -345,7 +345,7 @@
       
         
           
-            <h1 id="0-94版本HBase-编译运行中关于protobuf-buffer版本的问题"><a href="#0-94版本HBase-编译运行中关于protobuf-buffer版本的问题" class="headerlink" title="0.94版本HBase 编译运行中关于protobuf buffer版本的问题"></a>0.94版本HBase 编译运行中关于protobuf buffer版本的问题</h1><p>最近遇到一个protobuf版本的小问题，简单记录一下：</p>
+            <h1 id="0-94版本HBase-编译运行中关于Protocol-Buffer版本的问题"><a href="#0-94版本HBase-编译运行中关于Protocol-Buffer版本的问题" class="headerlink" title="0.94版本HBase 编译运行中关于Protocol Buffer版本的问题"></a>0.94版本HBase 编译运行中关于Protocol Buffer版本的问题</h1><p>最近遇到一个protobuf版本的小问题，简单记录一下：</p>
 <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>从HBase官网下载的0.94.18源码，直接编译后运行在hadoop2.2.0上，regionserver无法启动，报如下错误:</p>
 <pre><code>Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos
 $AppendRequestProto overrides final method getUnknownFields.()Lcom/google/protobuf/UnknownFieldSet;

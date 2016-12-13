@@ -84,20 +84,20 @@
 
 
 
-<meta name="description" content="0.94版本HBase 编译运行中关于protobuf buffer版本的问题最近遇到一个protobuf版本的小问题，简单记录一下：
+<meta name="description" content="0.94版本HBase 编译运行中关于Protocol Buffer版本的问题最近遇到一个protobuf版本的小问题，简单记录一下：
 问题描述从HBase官网下载的0.94.18源码，直接编译后运行在hadoop2.2.0上，regionserver无法启动，报如下错误:
 Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.p">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HBase的protobuf buffer版本问题">
+<meta property="og:title" content="HBase的Protocol Buffer版本问题">
 <meta property="og:url" content="http://yoursite.com/2016/12/13/protobuf/index.html">
 <meta property="og:site_name" content="Better late than never">
-<meta property="og:description" content="0.94版本HBase 编译运行中关于protobuf buffer版本的问题最近遇到一个protobuf版本的小问题，简单记录一下：
+<meta property="og:description" content="0.94版本HBase 编译运行中关于Protocol Buffer版本的问题最近遇到一个protobuf版本的小问题，简单记录一下：
 问题描述从HBase官网下载的0.94.18源码，直接编译后运行在hadoop2.2.0上，regionserver无法启动，报如下错误:
 Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.p">
-<meta property="og:updated_time" content="2016-12-13T13:18:21.804Z">
+<meta property="og:updated_time" content="2016-12-13T13:53:14.714Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HBase的protobuf buffer版本问题">
-<meta name="twitter:description" content="0.94版本HBase 编译运行中关于protobuf buffer版本的问题最近遇到一个protobuf版本的小问题，简单记录一下：
+<meta name="twitter:title" content="HBase的Protocol Buffer版本问题">
+<meta name="twitter:description" content="0.94版本HBase 编译运行中关于Protocol Buffer版本的问题最近遇到一个protobuf版本的小问题，简单记录一下：
 问题描述从HBase官网下载的0.94.18源码，直接编译后运行在hadoop2.2.0上，regionserver无法启动，报如下错误:
 Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.p">
 
@@ -133,7 +133,7 @@ Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.p">
 
 
 
-  <title> HBase的protobuf buffer版本问题 | Better late than never </title>
+  <title> HBase的Protocol Buffer版本问题 | Better late than never </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -278,7 +278,7 @@ Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.p">
             
             
               
-                HBase的protobuf buffer版本问题
+                HBase的Protocol Buffer版本问题
               
             
           </h1>
@@ -345,7 +345,7 @@ Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.p">
       
 
       
-        <h1 id="0-94版本HBase-编译运行中关于protobuf-buffer版本的问题"><a href="#0-94版本HBase-编译运行中关于protobuf-buffer版本的问题" class="headerlink" title="0.94版本HBase 编译运行中关于protobuf buffer版本的问题"></a>0.94版本HBase 编译运行中关于protobuf buffer版本的问题</h1><p>最近遇到一个protobuf版本的小问题，简单记录一下：</p>
+        <h1 id="0-94版本HBase-编译运行中关于Protocol-Buffer版本的问题"><a href="#0-94版本HBase-编译运行中关于Protocol-Buffer版本的问题" class="headerlink" title="0.94版本HBase 编译运行中关于Protocol Buffer版本的问题"></a>0.94版本HBase 编译运行中关于Protocol Buffer版本的问题</h1><p>最近遇到一个protobuf版本的小问题，简单记录一下：</p>
 <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>从HBase官网下载的0.94.18源码，直接编译后运行在hadoop2.2.0上，regionserver无法启动，报如下错误:</p>
 <pre><code>Java.lang.VerifyError: class org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos
 $AppendRequestProto overrides final method getUnknownFields.()Lcom/google/protobuf/UnknownFieldSet;
@@ -523,7 +523,7 @@ java.lang.UnsupportedOperationException: This is supposed to be overridden by su
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-94版本HBase-编译运行中关于protobuf-buffer版本的问题"><span class="nav-number">1.</span> <span class="nav-text">0.94版本HBase 编译运行中关于protobuf buffer版本的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">1.2.</span> <span class="nav-text">问题解决</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-94版本HBase-编译运行中关于Protocol-Buffer版本的问题"><span class="nav-number">1.</span> <span class="nav-text">0.94版本HBase 编译运行中关于Protocol Buffer版本的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题解决"><span class="nav-number">1.2.</span> <span class="nav-text">问题解决</span></a></li></ol></li></ol></div>
             
 
           </div>
